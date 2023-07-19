@@ -3,7 +3,10 @@ body{
     font-family: 'Titillium Web', sans-serif;
     margin: 0 auto;
 }
-
+main {
+    max-width: 1440px;
+    margin: 70px auto;
+}
 /* shared  */
 .description{
     color: #534C64;
@@ -210,19 +213,19 @@ nav {
 }
 .play-instantly-container{
     flex-direction: column;
-    padding: 0;
+    margin-right: -350px ;
     justify-content: normal;
+    
 }
 .play{
     text-align: center;
-    width: 90%;
     justify-content: center;
-    margin-bottom: 250px;
+    margin-bottom: 10px;
 }
-.play-img>{
-   width: fit-content;
-    
+.play-img{
+    margin-left: 200px;
 }
+
 }
 
 /* tablet devices */
@@ -251,6 +254,18 @@ nav {
     }
     .gamer-description{
     text-align: center;
+}
+.play-instantly-container{
+    flex-direction: column;
+    justify-content: normal;
+    
+}
+.play{
+    text-align: center;
+    margin-bottom: 10px;
+}
+.play-img{
+    margin-left: 130px;
 }
 }
 
