@@ -3,17 +3,19 @@ body{
     font-family: 'Titillium Web', sans-serif;
     margin: 0 auto;
 }
-/* main {
-    max-width: 1440px;
-    margin: 70px auto;
-} */
+
 /* shared  */
 .description{
     color: #534C64;
 }
-p>img{
+p>img {
     width: 25px;
     height: 25px;
+    
+}
+.footer-icons>img{
+     width: 40px;
+    height: 40px;
 }
 ul li{
     list-style: none;
@@ -108,9 +110,6 @@ nav {
     background-repeat: no-repeat;    
     margin-bottom: -41.5px;
 }
-.banner>img{
-    /* width: 60%; */
-    }
 .banner-buttons{
     margin-top: 30px;
     display: flex;
@@ -169,6 +168,74 @@ nav {
     right: 150px;
 }
 /* game selection style */
+.game-button-container{
+    margin-top: -150px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 50px 350px 50px 350px;
+    background-color: rgba(255, 66, 165, 0.03);
+}
+.game-button{
+   margin-top: 30px;
+   border-radius: 40px;
+   padding: 10px 15px;
+   display: flex;
+   align-items: center;
+   gap: 20px;
+   background-color: white;
+}
+.game-button>a{
+    text-decoration: none;
+    color: #534C64;
+    font-weight: bold;
+}
+.game-button:hover{
+    border: 2px solid #FF42A5;
+    
+   
+}
+.game-button a:hover{
+ color: #FF42A5;
+}
+/* footer style  */
+footer {
+    background: #0B0223;
+    text-align: center;
+    padding: 100px;
+}
+.white{
+    color: #FFF;
+    text-align: center;
+    align-items: center; 
+}
+.links>a  {
+    color: #FFF;
+    text-decoration: none;
+
+}
+.terms>a{
+    text-decoration: none;
+    color:  #afafaf;
+}
+.gamer-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.terms,.links,.footer-icons{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+.footer-text {
+    margin-top: 15px;
+}
+
+
+
 
 
 
@@ -228,6 +295,22 @@ nav {
 .play-img{
     margin-left: 200px;
 }
+.game-button-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+
+}
+.terms,.links,.footer-icons{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+footer{
+    padding: 100px 250px;
+    margin-right: -400px;
+}
 
 }
 
@@ -269,6 +352,12 @@ nav {
 }
 .play-img{
     margin-left: 130px;
+}
+.game-button-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding: 0 50px;
+
 }
 }
 
