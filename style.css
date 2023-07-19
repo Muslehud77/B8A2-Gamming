@@ -1,10 +1,13 @@
 body{
     font-family: 'VT323', monospace;
     font-family: 'Titillium Web', sans-serif;
-    margin: 0;
+    margin: 0 auto;
 }
 
 /* shared  */
+.description{
+    color: #534C64;
+}
 p>img{
     width: 25px;
     height: 25px;
@@ -100,6 +103,7 @@ nav {
     background-image: url(images/Group14.png);
     background-position: left;
     background-repeat: no-repeat;    
+    margin-bottom: -41.5px;
 }
 .banner>img{
     width: 60%;
@@ -117,10 +121,10 @@ nav {
     -webkit-text-fill-color:transparent;
 }
 .we-are-gamer-container{
-     display: flex;
+    display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 250px 0px 250px;
+    padding: 50px 250px 0px 250px;
     background-color: rgba(255, 66, 165, 0.03);
 }
 .gamer-description{
@@ -132,6 +136,34 @@ nav {
 }
 .gamer-description>h3{
     margin: 0;
+}
+/* online games style  */
+
+.gradient{
+    background-image: var(--primary-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color:transparent;
+}
+.online-heading{
+    margin-top: 50px;
+    text-align: center;
+}
+/* play instantly */
+.play-instantly-container{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    padding: 50px 250px 0px 250px;
+}
+.play{
+    text-align: right;
+    width: 450px;
+    margin-bottom: 250px;
+}
+.pip{
+    position: relative;
+    bottom: 300px;
+    right: 150px;
 }
 
 
@@ -162,17 +194,33 @@ nav {
     align-items: center;
     }
     .we-are-gamer-container>img{
-        width: 800px;
+        width: 100%;
     }
      .we-are-gamer-container{
        flex-direction: column;
-       margin: 0 100px;
        padding: 0;
        background: none;
+       justify-content: center;
+       margin-right: -350px ;
        
 }
 .gamer-description{
     text-align: center;
+    padding: 100px;
+}
+.play-instantly-container{
+    flex-direction: column;
+    padding: 0;
+    justify-content: normal;
+}
+.play{
+    text-align: center;
+    width: 90%;
+    justify-content: center;
+    margin-bottom: 250px;
+}
+.play-img>{
+   width: fit-content;
     
 }
 }
@@ -193,9 +241,13 @@ nav {
     width: 500px;
     align-items: center;
     }
+    .we-are-gamer-container>img{
+        width: 100%;
+    }
     .we-are-gamer-container{
         flex-direction: column;
         padding: 30px 150px 20px 150px;
+        
     }
     .gamer-description{
     text-align: center;
