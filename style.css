@@ -251,9 +251,6 @@ footer {
 /* responsive */
 
 @media screen and (max-width: 576px){
-    body{
-        width: 200%;
-    }
     .nav-bar, .nav-links{
         flex-direction: column;
     }
@@ -292,6 +289,7 @@ footer {
 }
 .play-instantly-container{
     flex-direction: column;
+    margin: 0;
     margin-right: -350px ;
     justify-content: normal;
     
@@ -320,6 +318,23 @@ footer{
     padding: 100px 250px;
     margin-right: -400px;
 }
+
+.online-heading{
+    margin-top: 50px;
+    text-align: center;
+    margin-right: -350px;
+}
+.card-container{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: -100px;
+    
+}
+
+
+
+
 
 }
 
