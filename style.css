@@ -161,15 +161,39 @@ a>img{
 }
 .card-container{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     gap: 25px;
 }
-.card{
-    text-align: center;
+.play-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
-.card:hover{
-    opacity: 50%;
+
+.play-hover{
+    position: absolute;
+    text-align: center;
+    display: none;
     cursor: pointer;
+}
+.play-card:hover .play-hover{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card-img>img:hover{
+    outline:3px solid #FF42A5;
+    border-radius: 20px;
+    cursor: pointer;
+    opacity: 60%;
+}
+.play-hover>img{
+    width: 30px;
+    height: 30px;
+}
+.play-hover:hover .car-img>img{
+    opacity: 60%;
 }
 
 /* play instantly */
